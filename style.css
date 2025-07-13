@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f4f1ed;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0dad2;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #356f8b;
+}
+
+#reset {
+  padding: 0.5rem 1rem;
+  background-color: #8c674d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.cycle {
+  min-width: 220px;
+  background-color: #faf7f3;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.cycle h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #5b4a3c;
+}
+
+.course {
+  background-color: #eaeaea;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Estados de curso */
+.course.locked {
+  background-color: #ffffff;
+  border-color: #d4d4d4;
+  color: #aaa;
+}
+
+.course.unlocked {
+  background-color: #ddeff5;
+  border-color: #88b4d3;
+  color: #305c72;
+}
+
+.course.completed {
+  background-color: #d4b49d;
+  border-color: #a28368;
+  color: white;
+}
+
+.course:hover {
+  transform: scale(1.02);
+}
+
+/* Scroll personalizado para iPad estético */
+main::-webkit-scrollbar {
+  height: 8px;
+}
+main::-webkit-scrollbar-track {
+  background: #f0ebe4;
+  border-radius: 10px;
+}
+main::-webkit-scrollbar-thumb {
+  background: #c3b8a8;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  #reset {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .cycle {
+    min-width: 180px;
+    padding: 0.8rem;
+  }
+
+  .course {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+}
