@@ -62,8 +62,7 @@ const courses = {
   "Ciclo 8": [
     { name: "Especialidades II", requires: ["English VI: RREL, Especialidades I, Terapéutica integrada"] },
     { name: "Geriatría", requires: ["English VI: RREL, Especialidades I, Terapéutica integrada"] },
-    { name: "Inglés médico", requires: ["English IV: RREL",
-    "Liderazgo gerencial y valores",
+    { name: "Inglés médico", requires: ["English IV: RREL", "Liderazgo gerencial y valores"] },
     { name: "Medicina física y del deporte", requires: ["English VI: RREL, Especialidades I, Terapéutica integrada"] },
     { name: "Nutrición funcional aplicada en especialidades clínicas y sistemas", requires: ["Principios de nutrición clínica y funcional, Principios e introducción a la medicina P4"] },
     { name: "Salud mental y psiquiatría", requires: ["Farmacología, Introducción a la clínica e interpretación de exámenes auxiliares, Integración fisiopatológica, English VI: RREL"] }
@@ -71,7 +70,7 @@ const courses = {
   "Ciclo 9": [
     { name: "Aplicación clínica de la medicina P4", requires: ["Nutrición funcional aplicada en especialidades clínicas y sistemas"] },
     { name: "Cirugía y traumatología", requires: ["Salud mental y psiquiatría, Geriatría, Especialidades II, Medicina física del deporte"] },
-    { name: "Gestión en salud", requires: ["Salud pública, Especialidades II"] }
+    { name: "Gestión en salud", requires: ["Salud pública, Especialidades II"] },
     { name: "Oncología médica", requires: ["Salud mental y psiquiatría, Geriatría, Especialidades II, Medicina física y del deporte"] },
     "Salud global y sistemas de salud",
     "Tesis I"
@@ -82,7 +81,7 @@ const courses = {
     { name: "Ginecología y obstetricia", requires: ["Cirugía y traumatología, Oncología médica"] },
     "Introducción a la salud y actividad física",
     { name: "Liderazgo, innovación y emprendimiento en salud", requires: ["Salud global y sistemas de salud, Gestión en salud"] },
-    { name: "Pediatría”, requires: ["Cirugía y traumatología, Oncología médica"] },
+    { name: "Pediatría", requires: ["Cirugía y traumatología", "Oncología médica"] },
     "Ultrasonido point of care"
   ],
   "Ciclo 11": [
@@ -95,11 +94,11 @@ const courses = {
   "Ciclo 12": [
     { name: "Bioética", requires: ["Tesis I"] }
     "Externado en gineco-obstetricia",
-    "Externado en pediatría
+    "Externado en pediatría"
   ],
   "Ciclo 13": [
     "Internado en medicina",
-    "Internado en pediatría
+    "Internado en pediatría"
   ],
   "Ciclo 14": [
     "Internado en cirugía",
